@@ -1,9 +1,14 @@
 import React from 'react';
+import Page from './AdminPage/Page';
 
-// import components
+
 
 const App = () => {
-  return <div>react app</div>;
+  return (<div className= 'bg-yellow-400'>
+    <Page />
+
+    
+    </div>);
 };
 
 export default App;
