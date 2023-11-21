@@ -4,11 +4,11 @@ import Page from './AdminPage/Page';
 
 
 const App = () => {
-  return (<div className= 'bg-yellow-400'>
-    <Page />
-
-    
-    </div>);
+  return (
+  <div  >
+  <Page />
+    </div>
+    );
 };
 
 export default App;

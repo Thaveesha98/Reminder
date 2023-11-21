@@ -1,24 +1,14 @@
-import React from 'react'
-import Header from '../Components/Header'
-// import DropDown from '../AdminPage/Components/DropDown'
-import Footer from '../Components/Footer'
-// import Table from './Components/Table'
-import Crud from './Components/Crud'
-import CRUD from './Components/Crud'
+import React from "react";
+import Examshedule from "./Sections/Examshedule";
+import MyTable from "./Sections/Table";
 
-
-
-const Page = () => {
-    
-  return (<div className='bg-yellow-400'>
-    <Header />
-    {/* <DropDown /> */}
-    <CRUD />
-    {/* <Table /> */}
-    <Footer />
-  </div>
-    
-  )
+function Page() {
+  return (
+    <div className="bg-yellow-400">
+      <Examshedule />
+      <MyTable />
+    </div>
+  );
 }
 
-export default Page
+export default Page;
