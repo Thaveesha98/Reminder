@@ -7,7 +7,11 @@ function Input(props) {
         <lable>{props.title}</lable>
       </div>
       <div>
-        <input type={props.type} placeholder={props.display}></input>
+        <input
+          type={props.type}
+          name={props.name}
+          placeholder={props.display}
+        ></input>
       </div>
     </div>
   );

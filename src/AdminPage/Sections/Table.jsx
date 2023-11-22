@@ -42,7 +42,7 @@ function MyTable() {
     <div className="w-[60%] mx-auto justify-center">
       <table className="flex justify-center border-spacing-5">
         <thead>
-          <div className="bg-pink-400 ">
+          <div className="bg-pink-400 rounded-md">
             <tr>
               <div className="flex justify-between mx-auto">
                 <th className="px-4 py-2">Time</th>

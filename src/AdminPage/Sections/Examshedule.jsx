@@ -4,11 +4,7 @@ import axios from "axios";
 
 function handleSubmit(event) {
   event.preventDefault();
-  const startTime = event.target.querySelector('[name="startTime"]').value;
-  const endTime = event.target.querySelector('[name="endTime"]').value;
   const data = new FormData(event.target);
-  data.append("startTime", startTime);
-  data.append("endTime", endTime);
 
   axios
     .post("https://example.com/api/endpoint", data)
@@ -22,7 +18,7 @@ function handleSubmit(event) {
 
 function Examshedule() {
   return (
-    <div>
+    <div className="relative  ">
       <form onSubmit={handleSubmit}>
         <div className="w-[40%] justify-center mx-auto border-2 rounded-md border-black relative">
           <div className="flex justify-center">
@@ -30,21 +26,24 @@ function Examshedule() {
               Schedule The Examinations{" "}
             </h1>
           </div>
-          <div className="flex space-x-10 justify-center pb-[2%] ml-[10%] ">
+          <div className="flex space-x-10 justify-center pb-[2%] ml-[35%] ">
             <div>
               <Input
                 title="Examination Name"
                 type="text"
+                name="Examination Name"
                 display="enter exam code"
               />
               <Input
                 title="Examination Date"
                 type="date"
+                name="Examination Date"
                 display="enter exam date"
               />
               <Input
                 title="Supervisor"
                 type="text"
+                name="Supervisor"
                 display="enter supervisor name"
               />
             </div>
@@ -57,17 +56,19 @@ function Examshedule() {
                   display="enter exam start time"
                   name="startTime"
                 />
-                <label className="mt-[8%] ml-[-27%] h-[1%] pr-1">To</label>
-                <input
-                  className="mt-[7.5%] h-[25px]"
-                  type="time"
-                  name="endTime"
-                />
+                <label className="mt-[6%] ml-[-21%] h-[1%] pr-1">To</label>
+                <div className="mt-[5.7%]">
+                  <Input
+                    type="time"
+                    name="endTime" // Add name attribute for endTime input
+                  />
+                </div>
               </div>
-              <div className="mt-[-4%]">
+              <div className="mt-[-6%]">
                 <Input
                   title="Assistant supervisor"
                   type="text"
+                  name="Assistant supervisor"
                   display="enter Assistant supervisor name"
                 />
               </div>
