@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 function Page() {
   return (
-    <div className="bg-gradient-to-t from-yellow-700 to-yellow-400">
+    <div className="bg-gradient-to-t from-yellow-400 to-yellow-200">
       <Header />
       <Examshedule />
       <MyTable />
