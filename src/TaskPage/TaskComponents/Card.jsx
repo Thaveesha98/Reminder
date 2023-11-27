@@ -16,7 +16,9 @@ function Card(props) {
           <div className="mt-[2%] ml-[5%]">
             <div className="flex">
               <img src={Timespan} alt="" />
-              <p>{props.Time}</p>
+              <div className="relative flex">
+                <p>{props.stime}</p>-<p>{props.etime}</p>
+              </div>
             </div>
             <div className="flex">
               <img src={Location} alt="" />

@@ -5,7 +5,7 @@ import Rtop from "./Rcomponents/Rtop";
 
 function Rpage() {
   return (
-    <div className="bg-gradient-to-t from-yellow-700 to-yellow-400">
+    <div className="bg-gradient-to-t from-yellow-700 to-yellow-100">
       <Header />
       <Rtop />
       <Footer />

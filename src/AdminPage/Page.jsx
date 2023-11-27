@@ -1,13 +1,14 @@
 import React from "react";
 import Examshedule from "./Sections/Examshedule";
 import MyTable from "./Sections/Table";
-import Header from "../components/Header";
+
 import Footer from "../components/Footer";
+import Dashboard from "../components/Dashboard";
 
 function Page() {
   return (
-    <div className="bg-gradient-to-t from-yellow-400 to-yellow-200">
-      <Header />
+    <div className="bg-gradient-to-t  from-yellow-400 to-yellow-100">
+      <Dashboard />
       <Examshedule />
       <MyTable />
       <Footer />

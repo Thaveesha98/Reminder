@@ -114,7 +114,7 @@ const ExamForm = () => {
           </div>
         </div>
         <button
-          className="absolute bottom-0 p-2 mb-2 text-white bg-blue-500 rounded-md right-2"
+          className="absolute bottom-0 p-2 mb-2 text-white bg-blue-500 rounded-md right-2  hover:bg-blue-400 focus:outline-none focus:bg-purple-600"
           type="submit"
         >
           Submit
